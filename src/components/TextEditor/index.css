@@ -1,0 +1,116 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: sans-serif;
+}
+
+.bg-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #F5F5F5;
+}
+
+.main-heading{
+    color: #424242;
+    font-weight: bolder;
+    margin-bottom: 20px;
+}
+
+.box-cont{
+    background-color: #48CFCB;
+    width: 90%;
+    padding: 15px;
+}
+
+.count-containers{
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+}
+
+.textarea-container{
+    margin: 50px 10px 10px 10px;
+    width: 99%;
+    box-sizing: border-box;
+    outline: none;
+    border: 0px;
+    padding: 20px;
+    font-size: 20px;
+}
+
+textarea {
+    resize: vertical;
+  }
+
+  .replacement-container{
+    display: flex;
+  }
+
+  .replacement-input{
+    width: 300px;
+    border: 0px;
+    outline: none;
+    background-color: transparent;
+    height: 50px;
+    box-sizing: border-box;
+    background-color: #229799;
+    font-size: 20px;
+    color: white !important;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+    padding: 10px;
+    text-shadow: 3px 5px 3px rgba(89, 89, 89, 1);
+  }
+
+  input::placeholder {
+    color: white; 
+    opacity: 1;  
+  }
+
+  .replace-button{
+    height: 50px;
+    width: 200px;
+    margin: 10px;
+    background-color: #424242;
+    border: 0px;
+    color: white;
+    cursor: pointer;
+    font-size: 20px;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+
+@media all and (max-width: 850px) {
+    .replacement-input{
+        font-size: 15px;
+    }
+    .replacement-input{
+        display: flex;
+    }
+}
+
+@media all and (max-width: 768px) {
+    .count-containers{
+        flex-direction: column;
+    }
+    .main-heading{
+        padding-top: 40px;
+        text-align: center;
+    }
+    .replacement-container{
+        flex-direction: column;
+        align-items: center;
+    }
+    .textarea-container{
+        width: 95%;
+    }
+}
